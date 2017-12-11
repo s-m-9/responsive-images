@@ -1,0 +1,67 @@
+/* CSS CODE */
+/*
+all images used belong to:
+Markus Spiske - https://500px.com/markusspiske
+Yinan CHen - https://500px.com/webmaster85
+Fahim Akhter - https://500px.com/fahimakhter
+*/
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 2.5%;
+    float: left;
+    width: 100%;
+}
+
+/*set max width 90%*/
+img {
+    /*  take 90% of space it is allowed to occupy; in this case,
+        90% of the list item
+    */
+    width: 90%;
+    transition: transform 0.5s ease-in-out;
+    border: 5px solid;
+}
+
+img:hover {
+    transform: rotate(15deg);
+    z-index: 20;
+/*
+    transform: scale(1.2);
+    transform: skewX(30deg);
+*/
+/*    transform: translate(50px, 10px);*/
+}
+
+
+
+@media screen and (min-width:600px) {
+/*    2 column*/
+    li {
+        width: 50%;
+    }
+    img:hover {
+        transform: translate(50px, 50px);
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    li {
+        width: 25%;
+    }
+    
+    img:hover {
+        transform: scale(1.2);
+    }
+    
+}
